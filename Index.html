@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>RS Lawn Care | Professional Lawn Services</title>
+<title>RS Lawn Care | Premium Lawn Services</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
   margin:0;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background:#f9f9f9;
+  background:#f7f7f7;
   color:#333;
 }
 
+/* NAVBAR */
 header {
+  position:sticky;
+  top:0;
   background:#145a32;
   color:white;
-  padding:20px 40px;
+  padding:15px 40px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-}
-
-header h1 {
-  margin:0;
+  z-index:1000;
 }
 
 nav a {
@@ -33,16 +33,17 @@ nav a {
   font-weight:500;
 }
 
+/* HERO */
 .hero {
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
   url('https://images.unsplash.com/photo-1598514982846-1f1b8baf0da3') center/cover;
   color:white;
-  padding:120px 20px;
+  padding:140px 20px;
   text-align:center;
 }
 
-.hero h2 {
-  font-size:42px;
+.hero h1 {
+  font-size:46px;
   margin-bottom:10px;
 }
 
@@ -50,65 +51,92 @@ nav a {
   font-size:18px;
 }
 
+/* BUTTON */
 .btn {
   display:inline-block;
   margin-top:20px;
-  padding:12px 25px;
+  padding:14px 28px;
   background:#27ae60;
   color:white;
   text-decoration:none;
   border-radius:6px;
   font-weight:bold;
+  transition:0.2s;
 }
 
+.btn:hover {
+  background:#1e8449;
+}
+
+/* SECTIONS */
 .section {
-  padding:60px 20px;
+  padding:70px 20px;
   max-width:1100px;
   margin:auto;
   text-align:center;
 }
 
 .section h2 {
+  font-size:32px;
   margin-bottom:30px;
-  font-size:30px;
 }
 
+/* SERVICES */
 .services {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap:20px;
+  gap:25px;
 }
 
 .card {
   background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
   transition:0.2s;
 }
 
 .card:hover {
-  transform:translateY(-5px);
+  transform:translateY(-8px);
 }
 
+/* GALLERY */
 .gallery img {
   width:100%;
   max-width:320px;
-  border-radius:10px;
+  border-radius:12px;
   margin:10px;
 }
 
-.highlight {
+/* TESTIMONIALS */
+.testimonials {
   background:#e8f5e9;
-  padding:40px 20px;
+  padding:60px 20px;
+}
+
+.review {
+  max-width:600px;
+  margin:15px auto;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* CTA */
+.cta {
+  background:#145a32;
+  color:white;
+  padding:60px 20px;
   text-align:center;
 }
 
+/* CONTACT */
 .contact-box {
   background:white;
   padding:30px;
-  border-radius:10px;
-  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.1);
 }
 
 form {
@@ -123,12 +151,12 @@ input, textarea {
   border:1px solid #ccc;
 }
 
+/* FOOTER */
 footer {
   background:#145a32;
   color:white;
   text-align:center;
   padding:20px;
-  margin-top:40px;
 }
 </style>
 </head>
@@ -136,29 +164,29 @@ footer {
 <body>
 
 <header>
-  <h1>RS Lawn Care</h1>
+  <h2>RS Lawn Care</h2>
   <nav>
     <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#gallery">Work</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Professional Lawn Care You Can Trust</h2>
-  <p>Serving Flagler & Putnam County</p>
+  <h1>Make Your Lawn Look Like a Showpiece</h1>
+  <p>Professional Lawn Care in Flagler & Putnam County</p>
   <a href="tel:3865699501" class="btn">Call Now</a>
 </section>
 
 <section id="services" class="section">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card">Lawn Mowing</div>
-    <div class="card">Edging</div>
-    <div class="card">Weeding</div>
-    <div class="card">Mulch Installation</div>
-    <div class="card">Hedge Trimming</div>
-    <div class="card">Yard Cleanup</div>
+    <div class="card"><strong>Lawn Mowing</strong><br>Clean, sharp cuts every time</div>
+    <div class="card"><strong>Edging</strong><br>Crisp lines that stand out</div>
+    <div class="card"><strong>Weeding</strong><br>Keep your yard clean</div>
+    <div class="card"><strong>Mulch</strong><br>Boost curb appeal</div>
+    <div class="card"><strong>Hedge Trimming</strong><br>Neat & professional look</div>
+    <div class="card"><strong>Cleanup</strong><br>Full yard transformations</div>
   </div>
 </section>
 
@@ -170,9 +198,17 @@ footer {
   </div>
 </section>
 
-<section class="highlight">
-  <h2>Fast, Reliable, Affordable</h2>
-  <p>We take pride in making your lawn stand out in your neighborhood.</p>
+<section class="testimonials">
+  <h2>What Customers Say</h2>
+  <div class="review">⭐⭐⭐⭐⭐ "My yard has never looked better!"</div>
+  <div class="review">⭐⭐⭐⭐⭐ "Reliable and shows up on time every time."</div>
+  <div class="review">⭐⭐⭐⭐⭐ "Highly recommend RS Lawn Care!"</div>
+</section>
+
+<section class="cta">
+  <h2>Ready for a Better Lawn?</h2>
+  <p>Call or book your service today</p>
+  <a href="tel:3865699501" class="btn">Call Now</a>
 </section>
 
 <section id="contact" class="section">
@@ -181,10 +217,6 @@ footer {
   <div class="contact-box">
     <p><strong>Phone:</strong> 386-569-9501</p>
     <p><strong>Email:</strong> rylanshelton04@gmail.com</p>
-
-    <a href="tel:3865699501" class="btn">Call Now</a>
-
-    <br><br>
 
     <form action="mailto:rylanshelton04@gmail.com" method="POST" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required>
