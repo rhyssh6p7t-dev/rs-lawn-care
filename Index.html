@@ -1,216 +1,204 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<title></title>
-<meta name="Generator" content="Cocoa HTML Writer">
+<meta charset="UTF-8">
+<title>RS Lawn Care | Professional Lawn Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body {
+  margin:0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:#f9f9f9;
+  color:#333;
+}
+
+header {
+  background:#145a32;
+  color:white;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1 {
+  margin:0;
+}
+
+nav a {
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.hero {
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1598514982846-1f1b8baf0da3') center/cover;
+  color:white;
+  padding:120px 20px;
+  text-align:center;
+}
+
+.hero h2 {
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.hero p {
+  font-size:18px;
+}
+
+.btn {
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#27ae60;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.section {
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.section h2 {
+  margin-bottom:30px;
+  font-size:30px;
+}
+
+.services {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.2s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+.gallery img {
+  width:100%;
+  max-width:320px;
+  border-radius:10px;
+  margin:10px;
+}
+
+.highlight {
+  background:#e8f5e9;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.contact-box {
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+form {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+input, textarea {
+  padding:12px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+footer {
+  background:#145a32;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+</style>
 </head>
+
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE </span><span class="s2">html</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s1">&lt;html </span><span class="s3">lang</span><span class="s1">=</span><span class="s4">"en"</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s1">&lt;head&gt;</span></p>
-<p class="p2"><span class="s1">&lt;meta </span><span class="s3">charset</span><span class="s1">=</span><span class="s4">"UTF-8"</span><span class="s1">&gt;</span></p>
-<p class="p3"><span class="s2">&lt;title&gt;</span><span class="s1">RS Lawn Care | Professional Lawn Services</span><span class="s2">&lt;/title&gt;</span></p>
-<p class="p4"><span class="s2">&lt;meta </span><span class="s3">name</span><span class="s2">=</span><span class="s1">"viewport"</span><span class="s2"> </span><span class="s3">content</span><span class="s2">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s2">&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;style&gt;</span></p>
-<p class="p2"><span class="s1">body</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin</span><span class="s5">:</span><span class="s6">0</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">font-family</span><span class="s1">: </span><span class="s4">'Segoe UI'</span><span class="s1">, Arial, sans-serif;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:</span><span class="s6">#f9f9f9</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">color</span><span class="s5">:</span><span class="s6">#333</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">header</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:</span><span class="s6">#145a32</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">color</span><span class="s1">:white;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">padding</span><span class="s5">:</span><span class="s1">20px</span><span class="s5"> </span><span class="s1">40px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">display</span><span class="s1">:flex;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">justify-content</span><span class="s1">:space-between;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">align-items</span><span class="s5">:center;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">header</span><span class="s5"> </span><span class="s1">h1</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin</span><span class="s5">:</span><span class="s6">0</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">nav</span><span class="s5"> </span><span class="s1">a</span><span class="s5"> {</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">color</span><span class="s1">:white;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin-left</span><span class="s5">:</span><span class="s6">20px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">text-decoration</span><span class="s5">:none;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">font-weight</span><span class="s5">:</span><span class="s6">500</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.hero</span><span class="s5"> {</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">background</span><span class="s1">:linear-gradient(rgba(</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0.6</span><span class="s1">), rgba(</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0.6</span><span class="s1">)),</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">  </span>url(</span><span class="s1">'https://images.unsplash.com/photo-1598514982846-1f1b8baf0da3'</span><span class="s5">) center/cover;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">color</span><span class="s1">:white;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">padding</span><span class="s5">:</span><span class="s1">120px</span><span class="s5"> </span><span class="s1">20px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">text-align</span><span class="s1">:center;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.hero</span><span class="s5"> </span><span class="s2">h2</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">font-size</span><span class="s5">:</span><span class="s6">42px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin-bottom</span><span class="s5">:</span><span class="s6">10px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.hero</span><span class="s5"> </span><span class="s2">p</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">font-size</span><span class="s5">:</span><span class="s6">18px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.btn</span><span class="s5"> {</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">display</span><span class="s1">:inline-block;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin-top</span><span class="s5">:</span><span class="s6">20px</span><span class="s5">;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">padding</span><span class="s5">:</span><span class="s1">12px</span><span class="s5"> </span><span class="s1">25px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:</span><span class="s6">#27ae60</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">color</span><span class="s1">:white;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">text-decoration</span><span class="s5">:none;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">border-radius</span><span class="s5">:</span><span class="s6">6px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">font-weight</span><span class="s5">:bold;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.section</span><span class="s5"> {</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">padding</span><span class="s5">:</span><span class="s1">60px</span><span class="s5"> </span><span class="s1">20px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">max-width</span><span class="s5">:</span><span class="s6">1100px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">margin</span><span class="s1">:auto;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">text-align</span><span class="s1">:center;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.section</span><span class="s5"> </span><span class="s2">h2</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin-bottom</span><span class="s5">:</span><span class="s6">30px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">font-size</span><span class="s5">:</span><span class="s6">30px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.services</span><span class="s5"> {</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">display</span><span class="s1">:grid;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">grid-template-columns</span><span class="s1">: repeat(auto-fit, minmax(</span><span class="s6">220px</span><span class="s1">,</span><span class="s6">1</span><span class="s1">fr));</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">gap</span><span class="s1">:</span><span class="s6">20px</span><span class="s1">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.card</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:white;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">padding</span><span class="s5">:</span><span class="s6">25px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">border-radius</span><span class="s5">:</span><span class="s6">10px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">box-shadow</span><span class="s1">:</span><span class="s6">0</span><span class="s1"> </span><span class="s6">4px</span><span class="s1"> </span><span class="s6">15px</span><span class="s1"> rgba(</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0.08</span><span class="s1">);</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">transition</span><span class="s5">:</span><span class="s6">0.2s</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p3"><span class="s7">.card</span><span class="s1">:hover {</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">transform</span><span class="s1">:translateY(-</span><span class="s6">5px</span><span class="s1">);</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.gallery</span><span class="s5"> </span><span class="s2">img</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">width</span><span class="s5">:</span><span class="s6">100%</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">max-width</span><span class="s5">:</span><span class="s6">320px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">border-radius</span><span class="s5">:</span><span class="s6">10px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin</span><span class="s5">:</span><span class="s6">10px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.highlight</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:</span><span class="s6">#e8f5e9</span><span class="s5">;</span></p>
-<p class="p6"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">padding</span><span class="s5">:</span><span class="s1">40px</span><span class="s5"> </span><span class="s1">20px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">text-align</span><span class="s1">:center;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p7"><span class="s1">.contact-box</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:white;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">padding</span><span class="s5">:</span><span class="s6">30px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">border-radius</span><span class="s5">:</span><span class="s6">10px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">box-shadow</span><span class="s1">:</span><span class="s6">0</span><span class="s1"> </span><span class="s6">4px</span><span class="s1"> </span><span class="s6">15px</span><span class="s1"> rgba(</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0</span><span class="s1">,</span><span class="s6">0.1</span><span class="s1">);</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">form</span><span class="s5"> {</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">display</span><span class="s1">:flex;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">flex-direction</span><span class="s5">:column;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">gap</span><span class="s1">:</span><span class="s6">10px</span><span class="s1">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">input</span><span class="s5">, </span><span class="s1">textarea</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">padding</span><span class="s5">:</span><span class="s6">12px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">border-radius</span><span class="s5">:</span><span class="s6">6px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">border</span><span class="s1">:</span><span class="s6">1px</span><span class="s1"> solid </span><span class="s6">#ccc</span><span class="s1">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">footer</span><span class="s5"> {</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">background</span><span class="s5">:</span><span class="s6">#145a32</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">color</span><span class="s1">:white;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">text-align</span><span class="s1">:center;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">padding</span><span class="s5">:</span><span class="s6">20px</span><span class="s5">;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">margin-top</span><span class="s5">:</span><span class="s6">40px</span><span class="s5">;</span></p>
-<p class="p3"><span class="s1">}</span></p>
-<p class="p2"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;body&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;header&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;h1&gt;</span><span class="s1">RS Lawn Care</span><span class="s2">&lt;/h1&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;nav&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;a </span><span class="s3">href</span><span class="s2">=</span><span class="s4">"#services"</span><span class="s2">&gt;</span><span class="s1">Services</span><span class="s2">&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;a </span><span class="s3">href</span><span class="s2">=</span><span class="s4">"#gallery"</span><span class="s2">&gt;</span><span class="s1">Gallery</span><span class="s2">&lt;/a&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;a </span><span class="s3">href</span><span class="s2">=</span><span class="s4">"#contact"</span><span class="s2">&gt;</span><span class="s1">Contact</span><span class="s2">&lt;/a&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;/nav&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/header&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;section </span><span class="s3">class</span><span class="s1">=</span><span class="s4">"hero"</span><span class="s1">&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;h2&gt;</span><span class="s1">Professional Lawn Care You Can Trust</span><span class="s2">&lt;/h2&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;p&gt;</span><span class="s1">Serving Flagler &amp; Putnam County</span><span class="s2">&lt;/p&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;a </span><span class="s3">href</span><span class="s2">=</span><span class="s1">"tel:3865699501"</span><span class="s2"> </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"btn"</span><span class="s2">&gt;</span><span class="s5">Call Now</span><span class="s2">&lt;/a&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s2">&lt;section </span><span class="s3">id</span><span class="s2">=</span><span class="s1">"services"</span><span class="s2"> </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"section"</span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;h2&gt;</span><span class="s1">Our Services</span><span class="s2">&lt;/h2&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"services"</span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"card"</span><span class="s2">&gt;</span><span class="s1">Lawn Mowing</span><span class="s2">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;div </span><span class="s3">class</span><span class="s1">=</span><span class="s4">"card"</span><span class="s1">&gt;</span><span class="s5">Edging</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;div </span><span class="s3">class</span><span class="s1">=</span><span class="s4">"card"</span><span class="s1">&gt;</span><span class="s5">Weeding</span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"card"</span><span class="s2">&gt;</span><span class="s1">Mulch Installation</span><span class="s2">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"card"</span><span class="s2">&gt;</span><span class="s1">Hedge Trimming</span><span class="s2">&lt;/div&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s4">"card"</span><span class="s2">&gt;</span><span class="s1">Yard Cleanup</span><span class="s2">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s2">&lt;section </span><span class="s3">id</span><span class="s2">=</span><span class="s1">"gallery"</span><span class="s2"> </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"section"</span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;h2&gt;</span><span class="s1">Our Work</span><span class="s2">&lt;/h2&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"gallery"</span><span class="s2">&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;img </span><span class="s3">src</span><span class="s2">=</span><span class="s1">"https://images.unsplash.com/photo-1592595896616-c37162298647"</span><span class="s2">&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;img </span><span class="s3">src</span><span class="s2">=</span><span class="s1">"https://images.unsplash.com/photo-1600585154340-be6161a56a0c"</span><span class="s2">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s2">&lt;section </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"highlight"</span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;h2&gt;</span><span class="s1">Fast, Reliable, Affordable</span><span class="s2">&lt;/h2&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;p&gt;</span><span class="s1">We take pride in making your lawn stand out in your neighborhood.</span><span class="s2">&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s2">&lt;section </span><span class="s3">id</span><span class="s2">=</span><span class="s1">"contact"</span><span class="s2"> </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"section"</span><span class="s2">&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;h2&gt;</span><span class="s1">Get a Free Quote</span><span class="s2">&lt;/h2&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;div </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"contact-box"</span><span class="s2">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;p&gt;&lt;strong&gt;</span><span class="s5">Phone:</span><span class="s1">&lt;/strong&gt;</span><span class="s5"> 386-569-9501</span><span class="s1">&lt;/p&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;p&gt;&lt;strong&gt;</span><span class="s1">Email:</span><span class="s2">&lt;/strong&gt;</span><span class="s1"> rylanshelton04@gmail.com</span><span class="s2">&lt;/p&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;a </span><span class="s3">href</span><span class="s2">=</span><span class="s1">"tel:3865699501"</span><span class="s2"> </span><span class="s3">class</span><span class="s2">=</span><span class="s1">"btn"</span><span class="s2">&gt;</span><span class="s5">Call Now</span><span class="s2">&lt;/a&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;br&gt;&lt;br&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;form </span><span class="s3">action</span><span class="s2">=</span><span class="s1">"mailto:rylanshelton04@gmail.com"</span><span class="s2"> </span><span class="s3">method</span><span class="s2">=</span><span class="s1">"POST"</span><span class="s2"> </span><span class="s3">enctype</span><span class="s2">=</span><span class="s1">"text/plain"</span><span class="s2">&gt;</span></p>
-<p class="p8"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">&lt;input </span><span class="s1">type</span><span class="s2">=</span><span class="s4">"text"</span><span class="s2"> </span><span class="s1">name</span><span class="s2">=</span><span class="s4">"name"</span><span class="s2"> </span><span class="s1">placeholder</span><span class="s2">=</span><span class="s4">"Your Name"</span><span class="s2"> </span><span class="s1">required</span><span class="s2">&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">&lt;input </span><span class="s3">type</span><span class="s2">=</span><span class="s1">"text"</span><span class="s2"> </span><span class="s3">name</span><span class="s2">=</span><span class="s1">"phone"</span><span class="s2"> </span><span class="s3">placeholder</span><span class="s2">=</span><span class="s1">"Phone Number"</span><span class="s2">&gt;</span></p>
-<p class="p4"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s2">&lt;textarea </span><span class="s3">name</span><span class="s2">=</span><span class="s1">"message"</span><span class="s2"> </span><span class="s3">placeholder</span><span class="s2">=</span><span class="s1">"What service do you need?"</span><span class="s2"> </span><span class="s3">required</span><span class="s2">&gt;&lt;/textarea&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">      </span></span><span class="s1">&lt;button </span><span class="s3">class</span><span class="s1">=</span><span class="s4">"btn"</span><span class="s1"> </span><span class="s3">type</span><span class="s1">=</span><span class="s4">"submit"</span><span class="s1">&gt;</span><span class="s5">Send Request</span><span class="s1">&lt;/button&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;/form&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;/div&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/section&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;footer&gt;</span></p>
-<p class="p3"><span class="s1"><span class="Apple-converted-space">  </span></span><span class="s2">&lt;p&gt;</span><span class="s1">© 2026 RS Lawn Care | Flagler &amp; Putnam County</span><span class="s2">&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/footer&gt;</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/html&gt;</span></p>
+
+<header>
+  <h1>RS Lawn Care</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Professional Lawn Care You Can Trust</h2>
+  <p>Serving Flagler & Putnam County</p>
+  <a href="tel:3865699501" class="btn">Call Now</a>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Lawn Mowing</div>
+    <div class="card">Edging</div>
+    <div class="card">Weeding</div>
+    <div class="card">Mulch Installation</div>
+    <div class="card">Hedge Trimming</div>
+    <div class="card">Yard Cleanup</div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1592595896616-c37162298647">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+  </div>
+</section>
+
+<section class="highlight">
+  <h2>Fast, Reliable, Affordable</h2>
+  <p>We take pride in making your lawn stand out in your neighborhood.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Get a Free Quote</h2>
+
+  <div class="contact-box">
+    <p><strong>Phone:</strong> 386-569-9501</p>
+    <p><strong>Email:</strong> rylanshelton04@gmail.com</p>
+
+    <a href="tel:3865699501" class="btn">Call Now</a>
+
+    <br><br>
+
+    <form action="mailto:rylanshelton04@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="phone" placeholder="Phone Number">
+      <textarea name="message" placeholder="What service do you need?" required></textarea>
+      <button class="btn" type="submit">Send Request</button>
+    </form>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 RS Lawn Care | Flagler & Putnam County</p>
+</footer>
+
 </body>
 </html>
